@@ -5,12 +5,6 @@
 
 In this lab, we'll test our SQL skills against some real-world interview questions from major companies!
 
-## Objectives
-
-You will be able to:
-
-* 
-* 
 
 ## Getting Started
 
@@ -22,13 +16,26 @@ If these questions seem hard to you, don't sweat it--they're supposed to be toug
 
 Since these are interview questions, they'll almost always be posed as hypotheticals. This means that you won't have a real database to work with and test your code on.  This also means that there are multiple different solutions to any given problem listed here. Be sure to doublecheck the code you write for bugs and errors--it's much harder to write bug-free code when you aren't able to test it against a database!
 
-## Question 1
+If these questions seem hard, that's normal. These are real questions that have been reported to online forums from job seekers at major companies such as Facebook, Amazon, and Twitter. 
 
-Write an SQL query that makes recommendations using the pages that your friends liked. Assume you have two tables: a two-column table of users and their friends, and a two-column table of users and the pages they liked.  It should not recommend pages you already like. 
+## Question 1 
+
+From Facebook: 
+
+Assume we have a table of employee information, which includes salary information. Write a query to find the names and salaries of the top 5 highest paid employees, in descending order. 
+
+
+```python
+SELECT name, salary from Employees
+ORDER BY salary DESC
+LIMIT 5;
+```
 
 ## Question 2
 
 Assume we have two SQL tables: **_authors_** and **_books_**. The authors table has a few million rows, and looks like this: 
+
+From Amazon:
 
 | author_name | book_name |
 |:-----------:|:---------:|
@@ -52,11 +59,32 @@ The books dataset also has a few million rows, and looks like this:
 
 Write an SQL query that shows the top 3 authors who sold the most total books. 
 
+
+```python
+SELECT a.author_name, SUM(b.copies_sold) as total_sold from Authors a
+JOIN Books b ON a.book_name = b.book_name
+GROUP BY a.author_name
+ORDER BY total_sold DESC
+LIMIT 3;
+```
+
 ## Question 3
+
+From Amazon:
 
 Assume you have two tables, `customers` and `orders`. Write an SQL query to select all customers who purchased at least 2 items on two separate days. 
 
+
+```python
+SELECT c.name, COUNT(DISTINCT o.OrderDate) as NumOrderDates FROM (SELECT c.name, o.quantity FROM Customers c 
+    JOIN Orders o ON c.orderNumber = o.OrderNumber
+    WHERE o.quantity > 1)
+WHERE NumOrderDates > 1
+```
+
 ## Question 4
+
+From Twitter:
 
 A company uses 2 data tables, Employee and Department, to store data about its employees and departments. 
 
@@ -70,12 +98,21 @@ DEPT_ID Integer
 Table Name: Department   
 Attributes:   
 DEPT_ID Integer,   
-Name String,   
+NAME String,   
 LOCATION String   
 
 Write a query to print the respective Department Name and number of employees for all departments in the Department table (even unstaffed ones). 
 
 Sort your result in descending order of employees per department; if two or more departments have the same number of employees, then sort those departments alphabetically by Department Name.
+
+
+```python
+SELECT d.name, COUNT(e.ID) as EmployeeCount 
+FROM Department d 
+LEFT JOIN Employee e on d.dept_id, = e.dept_id
+GROUP BY d.dept_id, d.name
+ORDER BY EmployeeCount DESC, d.name
+```
 
 # Summary
 
