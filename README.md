@@ -22,11 +22,17 @@ If these questions seem hard to you, don't sweat it--they're supposed to be toug
 
 Since these are interview questions, they'll almost always be posed as hypotheticals. This means that you won't have a real database to work with and test your code on.  This also means that there are multiple different solutions to any given problem listed here. Be sure to doublecheck the code you write for bugs and errors--it's much harder to write bug-free code when you aren't able to test it against a database!
 
+If these questions seem hard, that's normal. These are real questions that have been reported to online forums from job seekers at major companies such as Facebook, Amazon, and Twitter. Obviously, it's unlikely that they're still in use at these companies, but they still represent a great way for us to test our skills against the kinds of questions we can expect to be asked in an interview!
+
 ## Question 1
 
-Write an SQL query that makes recommendations using the pages that your friends liked. Assume you have two tables: a two-column table of users and their friends, and a two-column table of users and the pages they liked.  It should not recommend pages you already like. 
+From Facebook:
+
+Assume we have a table of employee information, which includes salary information. Write a query to find the names and salaries of the top 5 highest paid employees, in descending order.
 
 ## Question 2
+
+From Amazon:
 
 Assume we have two SQL tables: **_authors_** and **_books_**. The authors table has a few million rows, and looks like this: 
 
@@ -54,9 +60,13 @@ Write an SQL query that shows the top 3 authors who sold the most total books.
 
 ## Question 3
 
+From Amazon:
+
 Assume you have two tables, `customers` and `orders`. Write an SQL query to select all customers who purchased at least 2 items on two separate days. 
 
 ## Question 4
+
+From Twitter:
 
 A company uses 2 data tables, Employee and Department, to store data about its employees and departments. 
 
@@ -70,7 +80,7 @@ DEPT_ID Integer
 Table Name: Department   
 Attributes:   
 DEPT_ID Integer,   
-Name String,   
+NAME String,   
 LOCATION String   
 
 Write a query to print the respective Department Name and number of employees for all departments in the Department table (even unstaffed ones). 
