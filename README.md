@@ -87,6 +87,6 @@ Write a query to print the respective Department Name and number of employees fo
 
 Sort your result in descending order of employees per department; if two or more departments have the same number of employees, then sort those departments alphabetically by Department Name.
 
-# Summary
+## Summary
 
 In this lab, we tested our knowledge of SQL queries against some real-world interview questions!
