@@ -9,8 +9,7 @@ In this lab, we'll test our SQL skills against some real-world interview questio
 
 You will be able to:
 
-* 
-* 
+* Practice your SQL knowledge
 
 ## Getting Started
 
