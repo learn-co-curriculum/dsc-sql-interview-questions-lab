@@ -114,6 +114,6 @@ GROUP BY d.dept_id, d.name
 ORDER BY EmployeeCount DESC, d.name
 ```
 
-# Summary
+## Summary
 
 In this lab, we tested our knowledge of SQL queries against some real-world interview questions!
