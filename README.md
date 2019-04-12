@@ -5,6 +5,9 @@
 
 In this lab, we'll test our SQL skills against some real-world interview questions from major companies!
 
+## Objectives
+You will be able to:
+- Practice your SQL knowledge
 
 ## Getting Started
 
