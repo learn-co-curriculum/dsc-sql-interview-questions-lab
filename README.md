@@ -6,8 +6,10 @@
 In this lab, we'll test our SQL skills against some real-world interview questions from major companies!
 
 ## Objectives
+
 You will be able to:
-- Practice your SQL knowledge
+
+* Practice your SQL knowledge
 
 ## Getting Started
 
@@ -21,11 +23,11 @@ Since these are interview questions, they'll almost always be posed as hypotheti
 
 If these questions seem hard, that's normal. These are real questions that have been reported to online forums from job seekers at major companies such as Facebook, Amazon, and Twitter. Obviously, it's unlikely that they're still in use at these companies, but they still represent a great way for us to test our skills against the kinds of questions we can expect to be asked in an interview!
 
-## Question 1 
+## Question 1
 
-From Facebook: 
+From Facebook:
 
-Assume we have a table of employee information, which includes salary information. Write a query to find the names and salaries of the top 5 highest paid employees, in descending order. 
+Assume we have a table of employee information, which includes salary information. Write a query to find the names and salaries of the top 5 highest paid employees, in descending order.
 
 
 ```python
@@ -36,9 +38,9 @@ LIMIT 5;
 
 ## Question 2
 
-Assume we have two SQL tables: **_authors_** and **_books_**. The authors table has a few million rows, and looks like this: 
-
 From Amazon:
+
+Assume we have two SQL tables: **_authors_** and **_books_**. The authors table has a few million rows, and looks like this: 
 
 | author_name | book_name |
 |:-----------:|:---------:|
