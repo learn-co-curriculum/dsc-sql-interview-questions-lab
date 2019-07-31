@@ -31,7 +31,7 @@ Assume we have a table of employee information, which includes salary informatio
 
 
 ```python
-
+# Your code here
 ```
 
 
@@ -72,7 +72,7 @@ Write an SQL query that shows the top 3 authors who sold the most total books.
 
 
 ```python
-
+# Your code here
 ```
 
 
@@ -93,7 +93,7 @@ Assume you have two tables, `customers` and `orders`. Write an SQL query to sele
 
 
 ```python
-
+# Your code here
 ```
 
 
@@ -130,7 +130,7 @@ Sort your result in descending order of employees per department; if two or more
 
 
 ```python
-
+# Your code here
 ```
 
 
