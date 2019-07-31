@@ -29,6 +29,11 @@ From Facebook:
 
 Assume we have a table of employee information, which includes salary information. Write a query to find the names and salaries of the top 5 highest paid employees, in descending order.
 
+
+```python
+# Your code here
+```
+
 ## Question 2
 
 From Amazon:
@@ -57,11 +62,21 @@ The books dataset also has a few million rows, and looks like this:
 
 Write an SQL query that shows the top 3 authors who sold the most total books. 
 
+
+```python
+# Your code here
+```
+
 ## Question 3
 
 From Amazon:
 
 Assume you have two tables, `customers` and `orders`. Write an SQL query to select all customers who purchased at least 2 items on two separate days. 
+
+
+```python
+# Your code here
+```
 
 ## Question 4
 
@@ -85,6 +100,11 @@ LOCATION String
 Write a query to print the respective Department Name and number of employees for all departments in the Department table (even unstaffed ones). 
 
 Sort your result in descending order of employees per department; if two or more departments have the same number of employees, then sort those departments alphabetically by Department Name.
+
+
+```python
+# Your code here
+```
 
 ## Summary
 
