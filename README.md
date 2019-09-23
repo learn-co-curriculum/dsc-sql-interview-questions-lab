@@ -31,9 +31,11 @@ Assume we have a table of employee information, which includes salary informatio
 
 
 ```python
+"""
 SELECT name, salary from Employees
 ORDER BY salary DESC
 LIMIT 5;
+"""
 ```
 
 ## Question 2
@@ -66,11 +68,13 @@ Write an SQL query that shows the top 3 authors who sold the most total books.
 
 
 ```python
+"""
 SELECT a.author_name, SUM(b.copies_sold) as total_sold from Authors a
 JOIN Books b ON a.book_name = b.book_name
 GROUP BY a.author_name
 ORDER BY total_sold DESC
 LIMIT 3;
+"""
 ```
 
 ## Question 3
@@ -81,10 +85,12 @@ Assume you have two tables, `customers` and `orders`. Write an SQL query to sele
 
 
 ```python
+"""
 SELECT c.name, COUNT(DISTINCT o.OrderDate) as NumOrderDates FROM (SELECT c.name, o.quantity FROM Customers c 
     JOIN Orders o ON c.orderNumber = o.OrderNumber
     WHERE o.quantity > 1)
 WHERE NumOrderDates > 1
+"""
 ```
 
 ## Question 4
@@ -112,11 +118,13 @@ Sort your result in descending order of employees per department; if two or more
 
 
 ```python
+"""
 SELECT d.name, COUNT(e.ID) as EmployeeCount 
 FROM Department d 
 LEFT JOIN Employee e on d.dept_id, = e.dept_id
 GROUP BY d.dept_id, d.name
 ORDER BY EmployeeCount DESC, d.name
+"""
 ```
 
 ## Summary
