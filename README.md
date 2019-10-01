@@ -13,15 +13,15 @@ You will be able to:
 
 ## Getting Started
 
-In this lab, we'll see 4 different interview questions that test your SQL knowledge. We didn't write these questions--instead, we found them out in the real-world. These are questions that have been used in the past by major technology companies such as Facebook, Amazon, and Google. Our goal here isn't to memorize the questions or anything like that--after all, it's extremely unlikely that these questions are still in use, now that they've become publicly available on the interwebs. Instead, our goal is to treat these questions as if they are the real thing, and give us some insight into the types of questions we'll need to be able to answer in order pass an interview involving SQL. 
+In this lab, we'll see four different interview questions that test your SQL knowledge. We didn't write these questions -- instead, we found them out in the real-world. These are questions that have been used in the past by major technology companies such as Facebook, Amazon, and Twitter. Our goal here isn't to memorize the questions or anything like that -- after all, it's extremely unlikely that these questions are still in use, now that they've become publicly available on the interwebs. Instead, our goal is to treat these questions as if they are the real thing, and give us some insight into the types of questions we'll need to be able to answer in order pass an interview involving SQL. 
 
-If these questions seem hard to you, don't sweat it--they're supposed to be tough! These are meant to help you identify any areas of knowledge where you still need to grow! Use these questions as a way to see where your SQL knowledge is strong, and where it's a bit weak. Then, go study and **practice** in the areas where you still need work!
+If these questions seem hard to you, don't sweat it, they're supposed to be tough! These are meant to help you identify any areas of knowledge where you still need to grow! Use these questions as a way to see where your SQL knowledge is strong, and where it's a bit weak. Then, go study and **practice** in the areas where you still need work!
 
 ### A Note on Answering These Questions
 
-Since these are interview questions, they'll almost always be posed as hypotheticals. This means that you won't have a real database to work with and test your code on.  This also means that there are multiple different solutions to any given problem listed here. Be sure to doublecheck the code you write for bugs and errors--it's much harder to write bug-free code when you aren't able to test it against a database!
+Since these are interview questions, they'll almost always be posed as hypotheticals. This means that you won't have a real database to work with and test your code on. This also means that there are multiple different solutions to any given problem listed here. Be sure to doublecheck the code you write for bugs and errors. It's much harder to write bug-free code when you aren't able to test it against a database!
 
-If these questions seem hard, that's normal. These are real questions that have been reported to online forums from job seekers at major companies such as Facebook, Amazon, and Twitter. Obviously, it's unlikely that they're still in use at these companies, but they still represent a great way for us to test our skills against the kinds of questions we can expect to be asked in an interview!
+If these questions seem hard, that's normal. These are real questions that have been reported to online forums from job seekers at major companies. Obviously, it's unlikely that they're still in use at these companies, but they still represent a great way for us to test our skills against the kinds of questions we can expect to be asked in an interview!
 
 ## Question 1
 
@@ -42,7 +42,7 @@ LIMIT 5;
 
 From Amazon:
 
-Assume we have two SQL tables: **_authors_** and **_books_**. The authors table has a few million rows, and looks like this: 
+Assume we have two SQL tables: `authors` and `books`. The authors table has a few million rows, and looks like this: 
 
 | author_name | book_name |
 |:-----------:|:---------:|
@@ -81,7 +81,7 @@ LIMIT 3;
 
 From Amazon:
 
-Assume you have two tables, `customers` and `orders`. Write an SQL query to select all customers who purchased at least 2 items on two separate days. 
+Assume you have two tables, `customers` and `orders`. Write a SQL query to select all customers who purchased at least 2 items on two separate days. 
 
 
 ```python
@@ -97,7 +97,7 @@ WHERE NumOrderDates > 1
 
 From Twitter:
 
-A company uses 2 data tables, Employee and Department, to store data about its employees and departments. 
+A company uses 2 data tables, `Employee` and `Department`, to store data about its employees and departments. 
 
 Table Name: Employee   
 Attributes:   
