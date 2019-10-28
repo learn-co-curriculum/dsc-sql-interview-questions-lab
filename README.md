@@ -9,7 +9,9 @@ In this lab, we'll test our SQL skills against some real-world interview questio
 
 You will be able to:
 
-* Practice your SQL knowledge
+* Write SQL queries to filter and order results
+* Decide and perform whichever type of join is best for retrieving desired data
+* Write subqueries to decompose complex queries
 
 ## Getting Started
 
